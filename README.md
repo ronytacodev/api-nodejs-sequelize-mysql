@@ -9,10 +9,12 @@ Code to create API REST and testing with REST CLIENT.
 * Extension VSCode REST CLIENT
 * Sequelize ORM
 * Yarn 
+* Nodemon
 
 # Commands 
 * npm init -y 
 * yarn add express
+* yarn add -D nodemon
 
 # SCREENSHOT
 
