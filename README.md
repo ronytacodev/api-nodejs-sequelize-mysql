@@ -15,6 +15,7 @@ Code to create API REST and testing with REST CLIENT.
 * npm init -y 
 * yarn add express
 * yarn add -D nodemon
+* yarn add cors
 
 # SCREENSHOT
 
