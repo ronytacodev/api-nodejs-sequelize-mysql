@@ -1,8 +1,11 @@
+const Usuario = require('../models/Usuario');
+
 const router = require('express').Router();
 
 // Obtener todos los usuarios
-router.get('/', (req, res)=> {
-    res.json([]);
+router.get('/', async (req, res)=> {
+    const usuarios = await Usuario.findAll();
+    res.json(usuarios);
 });
 
 // Obtener solo un usuario
