@@ -2,7 +2,7 @@
 GET http://localhost:3030/usuarios
 
 ###
-GET http://localhost:3030/usuarios/1
+GET http://localhost:3030/usuarios/3
 
 ### 
 POST http://localhost:3030/usuarios
