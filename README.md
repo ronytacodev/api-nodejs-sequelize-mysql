@@ -16,6 +16,8 @@ Code to create API REST and testing with REST CLIENT.
 * yarn add express
 * yarn add -D nodemon
 * yarn add cors
+* yarn add sequelize
+* yarn add mysql2
 
 # SCREENSHOT
 
