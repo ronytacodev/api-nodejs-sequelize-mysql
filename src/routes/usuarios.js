@@ -9,12 +9,10 @@ router.get('/', async (req, res)=> {
 });
 
 // Obtener solo un usuario
-router.get('/:id', (req, res)=> {
+router.get('/:id', async (req, res)=> {
     const id = req.params.id;
-    res.json({
-        id,
-        nombre: "usuario",
-    });
+    const usuario = await Usuario.findByPk(id);
+    res.json(usuario);
 });
 
 // Crear un usuario
