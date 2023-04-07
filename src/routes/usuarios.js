@@ -18,7 +18,7 @@ router.get('/:id', (req, res)=> {
 });
 
 // Crear un usuario
-router.post('/', (req, res)=> {
+router.post('/', async (req, res)=> {
     const {nombre, email} = req.body;
 
     if(!nombre || !email) {
@@ -26,7 +26,7 @@ router.post('/', (req, res)=> {
             error: "uno o mas campos vacíos"
         });
     }
-
+    const usuario = await Usuario.create({nombre, email});
     res.json({
         nombre,
         email,
